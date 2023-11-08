@@ -1,7 +1,9 @@
 #!/usr/bin/python3
-def mul_by_2(num):
-	return num * 2
+def get_func_mul_by_num(num):
+	def mult_by(value):
+		return num * value
+	return mult_by
 
-def do_math(func, num):
-	return func(num)
-print ("8 * 2 = {}".format(do_math(mul_by_2, 8)))
+generated_func = get_func_mul_by_num(5)
+print("5 * 10  = {}".format(generated_func(10)))
+
