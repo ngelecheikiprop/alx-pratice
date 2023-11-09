@@ -7,3 +7,5 @@ def dbl_num(num):
 
 print (list(map(dbl_num, oneto10)))
 print(list(map((lambda x:x ** 3), oneto10)))
+
+aList  = list(map((lambda x,y:x + y),[1,2,3],[1,2,3]))
